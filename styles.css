@@ -214,15 +214,20 @@ footer {
 
 /* Estilos para hacer la página receptiva */
 @media screen and (max-width: 768px) {
+    .reinos-container {
+        flex-direction: column;
+        /* Cambiar a diseño de columna en pantallas más pequeñas */
+    }
+
+    .reino, .hermandades-grid {
+        flex-basis: calc(100% - 20px);
+        /* Ajustar el ancho de cada elemento en dispositivos móviles */
+        /* 20px es el espacio entre elementos (gap) */
+    }
+
     .hermandades-grid {
         grid-template-columns: repeat(2, 1fr);
         /* Cambiar a diseño de 2 columnas en pantallas más pequeñas */
-    }
-
-    .hermandades-grid .hermandad {
-        flex-basis: calc(50% - 20px);
-        /* Ajustar el ancho de cada elemento en dispositivos móviles */
-        /* 20px es el espacio entre elementos (gap) */
     }
 }
 
