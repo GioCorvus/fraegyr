@@ -22,13 +22,23 @@ body {
 }
 
 header {
-    font-family: "Pieces",arial;
+    font-family: "Pieces", arial;
     font-size: 30px;
     text-align: center;
-    background-color: #D2B48C; /* Color de fondo para el encabezado */
+    background-color: #D2B48C;
     color: #000000;
     padding: 5px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-icon {
+    width: 7%; /* Adjust the width of the icon */
+    height: auto; /* Adjust the height of the icon */
+    margin: 0 10px; /* Adjust the spacing between the icon and text */
 }
 
 nav {
@@ -38,16 +48,19 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: white;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 0 30px;
     border-radius: 5px;
-    background-color: #ddd; /* Color de fondo para los elementos del menú */
+    background-color: #3E2723; /* Color de fondo para los elementos del menú */
     display: inline-block;
+    width: 100px;
 }
 
 nav a:hover {
-    background-color: #ccc; /* Cambia el color de fondo al pasar el mouse sobre los elementos del menú */
+    background-color: #D2B48C;
+    color: #3E2723;
+    transition: 0.5s;
 }
 
 #content {
@@ -68,6 +81,13 @@ th, td {
 th{
     background-color: #3E2723;
     color: white;
+}
+
+.smallicon{
+    width: 8%;
+    height: auto;
+    display: block;
+    margin:auto;
 }
 
 /* Nuevo estilo para los divs dentro del td */
