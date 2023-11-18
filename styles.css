@@ -14,11 +14,11 @@ body {
 }
 
 #container {
-    background-color: #D7CEB2; /* Color de fondo para el contenedor principal */
+    background-color: #D7CEB2;
     width: 80%;
-    margin: 50px auto; /* Centrar el contenedor en la página */
+    margin: 50px auto; 
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 20); /* Sombra ligera alrededor del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 20); 
 }
 
 header {
@@ -36,9 +36,9 @@ header {
 }
 
 .header-icon {
-    width: 7%; /* Adjust the width of the icon */
-    height: auto; /* Adjust the height of the icon */
-    margin: 0 10px; /* Adjust the spacing between the icon and text */
+    width: 7%; 
+    height: auto; 
+    margin: 0 10px;
 }
 
 nav {
@@ -63,10 +63,12 @@ nav a:hover {
     transition: 0.5s;
 }
 
+/*Div del contenido.*/
 #content {
     text-align: center;
 }
 
+/*Tanlas del contenido, ya que intentaré hacerlo todo en tablas*/
 table {
     width: 100%;
     border-collapse: collapse;
@@ -83,6 +85,36 @@ th{
     color: white;
 }
 
+/*Texto de la intro*/
+
+.styled-paragraphs p {
+    margin-bottom: 20px;
+}
+
+.styled-paragraphs p:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.styled-paragraphs p::before {
+    content: "\201C"; /* Left double quotation mark */
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+.styled-paragraphs p::after {
+    content: "\201D"; /* Right double quotation mark */
+    font-size: 2em;
+    margin-left: 5px;
+}
+
+#mapa{
+    width:80%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Añadir una sombra */
+}
+
+/*Iconos de reinos y demás*/
 .smallicon{
     width: 8%;
     height: auto;
@@ -90,28 +122,28 @@ th{
     margin:auto;
 }
 
-/* Nuevo estilo para los divs dentro del td */
+/* Estilos para tablas dobles*/
 .reinos-container {
     display: flex;
     justify-content: space-around;
 }
+
+/*Línea horizontal*/
 
 .reino {
     flex: 1;
     margin: 0 10px;
 }
 
-
-
 .reino:not(:last-child) {
-    border-right: 1px solid #000; /* Adjust the color and thickness of the line as needed */
+    border-right: 1px solid #000; 
 }
 
-/* Additional styling for the second .reino div */
 .reino + .reino {
-    margin-left: 20px; /* Adjust the spacing between the two .reino divs */
+    margin-left: 20px; 
 }
 
+/*Imagen grande, revisar*/
 
 #escudo {
     width: 90%;
@@ -134,11 +166,7 @@ ul li {
 }
 
 
-#mapa{
-    width:80%;
-    height: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Añadir una sombra */
-}
+
 
 footer {
     text-align: center;
