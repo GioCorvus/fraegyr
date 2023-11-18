@@ -214,26 +214,19 @@ footer {
 
 /* Estilos para hacer la página receptiva */
 @media screen and (max-width: 768px) {
-    .reinos-container {
-        flex-direction: column; /* Cambiar a diseño de columna en pantallas más pequeñas */
-    }
-
-    .reino {
-        flex: none; /* Ancho completo en pantallas más pequeñas */
-        margin: 10px 0; /* Espacio entre elementos en pantallas pequeñas */
-    }
-
-    .smallicon {
-        width: 50%; /* Ajustar tamaño de iconos en pantallas pequeñas */
+    .hermandades-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Cambiar a diseño de 2 columnas en pantallas más pequeñas */
     }
 }
 
 @media screen and (max-width: 600px) {
     #container {
-        width: 90%; /* Ajustar ancho del contenedor en pantallas pequeñas */
+        width: 90%;
     }
 
     .smallicon {
-        width: 100%; /* Ajustar tamaño de iconos al 100% en pantallas muy pequeñas */
+        width: 50%;
+        /* Ajustar tamaño de iconos en pantallas pequeñas */
     }
 }
