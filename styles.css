@@ -213,6 +213,7 @@ footer {
 }
 
 /* Estilos para hacer la página receptiva */
+/* Estilos para hacer la página receptiva */
 @media screen and (max-width: 768px) {
     .reinos-container {
         flex-direction: column;
@@ -228,6 +229,11 @@ footer {
     .hermandades-grid {
         grid-template-columns: repeat(2, 1fr);
         /* Cambiar a diseño de 2 columnas en pantallas más pequeñas */
+    }
+
+    .reino + .reino {
+        margin-top: 20px;
+        /* Agregar espacio entre el segundo div con clase "reino" y las hermandades */
     }
 }
 
