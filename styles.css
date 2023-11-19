@@ -40,6 +40,20 @@ header {
     margin: 0 10px;
 }
 
+#imgreemplaza{
+    display:none;
+    width: 30%;
+    height: auto;
+    margin: auto;
+}
+
+#imgreemplaza1{
+    display:none;
+    width: 15%;
+    height: auto;
+    margin: auto;
+}
+
 nav {
     text-align: center;
     margin-bottom: 20px;
@@ -199,8 +213,6 @@ ul li {
     margin-bottom: 10px; /* Espacio entre la imagen y el texto */
 }
 
-
-
 footer {
     text-align: center;
     background-color: #333;
@@ -212,7 +224,30 @@ footer {
     width: 100%;
 }
 
-/* Estilos para hacer la página receptiva */
+.mobile-nav {
+    display: none;
+    text-align: center;
+    background-color: #D2B48C;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.mobile-nav a:hover {
+    background-color: #D7CEB2;
+    color: #3E2723;
+}
+
 /* Estilos para hacer la página receptiva */
 @media screen and (max-width: 768px) {
     .reinos-container {
@@ -235,15 +270,44 @@ footer {
         margin-top: 20px;
         /* Agregar espacio entre el segundo div con clase "reino" y las hermandades */
     }
-}
 
-@media screen and (max-width: 600px) {
+    nav {
+        text-align: center;
+        display: block; /* Change from 'none' to 'block' to stack items vertically */
+    }
+
+    nav a {
+        display: block; /* Make each navigation item a block element */
+        margin: 15px auto; /* Add some vertical margin for separation and center horizontally */
+        width: 80%; /* Set the width of the navigation items */
+        max-width: 300px; /* Set a maximum width for larger screens */
+        padding: 12px; /* Add padding for better touch interaction */
+        border-radius: 5px; /* Add some rounded corners for aesthetics */
+        background-color: #3E2723; /* Background color for the navigation items */
+        color: white; /* Text color for the navigation items */
+        text-decoration: none; /* Remove default link underline */
+    }
+
+    header img{
+        display:none;
+    }
+
     #container {
         width: 90%;
     }
 
     .smallicon {
-        width: 50%;
+        width: 30%;
         /* Ajustar tamaño de iconos en pantallas pequeñas */
     }
+
+    #imgreemplaza{
+        display:block;
+    }
+
+    #imgreemplaza1{
+        display:none;
+    }
+
 }
+
