@@ -255,6 +255,11 @@ ul li {
     border-radius: 8px; /* Bordes redondeados para estética */
 }
 
+.letra-container a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto */
+}
+
 .letra-container a:hover {
     box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
     border-radius: 5px; /* Radio del borde */
