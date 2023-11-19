@@ -8,6 +8,11 @@
     src: url('font/crows.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Song';
+    src: url('font/song.ttf') format('truetype');
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -29,29 +34,28 @@ body {
 }
 
 header {
-    font-family: "Crow", Arial, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    background-color: #D2B48C;
-    color: #000000;
-    padding: 5px;
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 8%;
+    background-color: #D2B48C;
+    color: #000000;
+    padding: 5px;
+    margin-bottom: 20px;
     border-radius: 6px;
 }
 
 .header-icon {
-    width: 7%;
+    width: 8%; /* Adjust the width as needed */
     height: auto;
-    margin: 0 10px;
+    margin: 0 40px; /* Adjust the margin as needed */
 }
 
-header h1{
-    margin-left: 20px;
-    margin-right: 20px;
+header h1 {
+    font-family: "Song", Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin: 0; /* Remove default margin */
 }
 
 #imgreemplaza{
@@ -169,6 +173,19 @@ th {
     /* Espacio entre elementos */
 }
 
+.reino h1 {
+    font-family: "Song", Arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.reino hr {
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
 .reino h2 {
     font-family: "Pieces", Arial, sans-serif;
     font-size: 40px;
@@ -220,50 +237,67 @@ ul li {
     margin-bottom: 10px; /* Espacio entre la imagen y el texto */
 }
 
-footer {
+/*LETRAS PERSONAJES*/
+
+/* Estilos para los contenedores de letras y personajes */
+.abecedario-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre elementos de la cuadrícula */
+}
+
+.letra-container {
     text-align: center;
-    background-color: #333;
-    /* Color de fondo para el pie de página */
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados para estética */
+}
+
+.letra-container h1 {
+    font-family: "Song", Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    margin-bottom: 5px;
+}
+
+.personajes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Espacio entre elementos de la cuadrícula */
+}
+
+.carta-personaje {
+    text-align: center;
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 4px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados para estética */
+    font-weight: bold;
+}
+
+.carta-personaje P{
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.carta-personaje img {
     width: 100%;
-}
-
-.mobile-nav {
-    display: none;
-    text-align: center;
-    background-color: #D2B48C;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.mobile-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    display: block;
-}
-
-.mobile-nav a:hover {
-    background-color: #D7CEB2;
-    color: #3E2723;
+    height: 150px; /* Adjust the height as needed */
+    object-fit: contain;
+    border-radius:30px;
 }
 
 /* Estilos para hacer la página receptiva */
 @media screen and (max-width: 768px) {
+
     header {
         display: flex;
         flex-direction: column;
         justify-content: center; /* Center content vertically */
         align-items: center; /* Center content horizontally */
     }
-    
+
+
     h1 {
         margin: 0; /* Remove default margin for h1 element */
         margin-bottom: 20px;
@@ -292,19 +326,19 @@ footer {
 
     nav {
         text-align: center;
-        display: block; /* Change from 'none' to 'block' to stack items vertically */
+        display: block; 
     }
 
     nav a {
-        display: block; /* Make each navigation item a block element */
-        margin: 15px auto; /* Add some vertical margin for separation and center horizontally */
-        width: 80%; /* Set the width of the navigation items */
-        max-width: 300px; /* Set a maximum width for larger screens */
-        padding: 12px; /* Add padding for better touch interaction */
-        border-radius: 5px; /* Add some rounded corners for aesthetics */
-        background-color: #3E2723; /* Background color for the navigation items */
-        color: white; /* Text color for the navigation items */
-        text-decoration: none; /* Remove default link underline */
+        display: block; 
+        margin: 15px auto; 
+        width: 80%;
+        max-width: 300px; 
+        padding: 12px; 
+        border-radius: 5px;m 
+        background-color: #3E2723; 
+        color: white; 
+        text-decoration: none; 
     }
 
     header img{
@@ -328,5 +362,26 @@ footer {
         display:none;
     }
 
+    /*QUERY PERSONAJES*/
+
+    /* Styles for the letters of the abecedary */
+    .abecedario-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Styles for the character cards */
+    .carta-personaje {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+footer {
+    text-align: center;
+    background-color: #333;
+    /* Color de fondo para el pie de página */
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
