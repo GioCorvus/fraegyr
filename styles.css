@@ -89,7 +89,9 @@ nav a {
 nav a:hover {
     background-color: #D2B48C;
     color: #3E2723;
-    transition: 0.5s;
+    box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
+    border-radius: 5px; /* Radio del borde */
+    transition: all 0.5s ease; /* Agrega transición suave */
 }
 
 /*Div del contenido.*/
@@ -253,6 +255,12 @@ ul li {
     border-radius: 8px; /* Bordes redondeados para estética */
 }
 
+.letra-container a:hover {
+    box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
+    border-radius: 5px; /* Radio del borde */
+    transition: all 0.5s ease; /* Agrega transición suave */
+}
+
 .letra-container h1 {
     font-family: "Song", Arial, sans-serif;
     font-size: 30px;
@@ -286,6 +294,8 @@ ul li {
     object-fit: contain;
     border-radius:30px;
 }
+
+
 
 /* Estilos para hacer la página receptiva */
 @media screen and (max-width: 768px) {
