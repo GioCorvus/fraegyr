@@ -310,6 +310,65 @@ ul li {
     border-radius:30px;
 }
 
+/*HTMLS DE PERSONAJES*/
+
+/* Estilos para la sección de introducción y detalles del personaje */
+.character-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.character-intro h2 {
+    font-family: "Pieces", Arial, sans-serif;
+    font-size: 80px;
+    margin-bottom: 10px; /* Añade espacio entre el título y la línea */
+    margin-top: 0;
+}
+
+.character-intro h2:after {
+    content: '';
+    display: block;
+    margin:auto;
+    width: 80%;
+    height: 0.5px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea */
+    margin-top: 5px; /* Espacio entre el título y la línea */
+}
+
+.intro-left {
+    width: 60%;
+}
+
+.intro-right {
+    width: 30%;
+}
+
+
+/* Ajusta el estilo del texto en la intro izquierda */
+/* Añade un estilo para resaltar ciertas palabras */
+.intro-left p {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-top: 20px; /* Añade espacio entre el título y el texto */
+    margin-left: 10px;
+    color: #333; /* Cambia el color del texto normal */
+    font-size: 17px;
+
+}
+
+/* Resalta palabras específicas en el texto */
+.intro-left p .resaltado {
+    font-weight: bold; /* Hace que las palabras resaltadas sean más audaces */
+}
+
+.character-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Añade bordes redondeados a la imagen */
+    border: 1px solid #ddd; /* Borde para la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y la tabla */
+}
+
 
 
 /* Estilos para hacer la página receptiva */
