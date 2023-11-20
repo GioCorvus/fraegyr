@@ -144,9 +144,18 @@ th {
     /* Añadir una sombra */
 }
 
-/*Iconos de reinos y demás*/
-.smallicon {
+
+/*Iconos grande parte superior*/
+.mediumlicon {
     width: 15%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/*Iconos de reinos*/
+.smallicon {
+    width: 30%;
     height: auto;
     display: block;
     margin: auto;
@@ -163,6 +172,7 @@ th {
 .reino {
     flex: 1;
     margin: 0 10px;
+    font-weight: bold;
 }
 
 .reino:not(:last-child) {
@@ -329,6 +339,11 @@ ul li {
         /* 20px es el espacio entre elementos (gap) */
     }
 
+    .reino:not(:last-child) {
+        border-right: 0px;
+        /* Línea vertical entre elementos */
+    }
+
     .hermandades-grid {
         grid-template-columns: repeat(2, 1fr);
         /* Cambiar a diseño de 2 columnas en pantallas más pequeñas */
@@ -350,7 +365,7 @@ ul li {
         width: 80%;
         max-width: 300px; 
         padding: 12px; 
-        border-radius: 5px;m 
+        border-radius: 5px;
         background-color: #3E2723; 
         color: white; 
         text-decoration: none; 
