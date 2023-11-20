@@ -369,18 +369,86 @@ ul li {
     margin-bottom: 10px; /* Espacio entre la imagen y la tabla */
 }
 
+/*TABLA HISTORIA*/
+
+/* Estilos para la sección de historia */
 
 
-/* Estilos para hacer la página receptiva */
+
+.divimagenizquierda,
+.divimagederecha,
+.divsinimagen {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.divsinimagen {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    box-sizing: border-box;
+
+}
+
+.divsinimagen .text-container {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.image-container,
+.text-container {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-container {
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px;
+    padding-top: 10px;
+}
+
+.image-description {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.text-container h2 {
+    font-family: "Song", Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.tituloizq{
+    text-align: left; /* Alinea el título a la izquierda */
+    margin-left: 30px;
+    margin-top: 0px;
+    font-size: 40px;
+    font-family: "Song", Arial, sans-serif;
+}
+
+
 @media screen and (max-width: 768px) {
-
     header {
         display: flex;
         flex-direction: column;
         justify-content: center; /* Center content vertically */
         align-items: center; /* Center content horizontally */
     }
-
 
     h1 {
         margin: 0; /* Remove default margin for h1 element */
@@ -462,7 +530,126 @@ ul li {
     .carta-personaje {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /*PERSONAJES*/
+
+    .character-intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-left,
+    .intro-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .character-intro h2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .intro-left p {
+        font-size: 14px;
+    }
+
+    .intro-left p .resaltado {
+        font-weight: bold;
+    }
+
+    .character-image img {
+        width: 70%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .intro-right {
+        width: 100%;
+        margin-top: 20px;
+        order: -1; /* Cambia el orden para que aparezca primero */
+    }
+
+    .intro-right table {
+        width: 100%;
+    }
+
+    .intro-right table th,
+    .intro-right table td {
+        padding: 8px;
+    }
+
+    .tituloizq {
+        font-size: 24px;
+        margin-left: 0;
+    }
+
+    .divimagenizquierda,
+    .divimagederecha,
+    .divsinimagen {
+        flex-direction: column;
+    }
+
+    .image-container,
+    .text-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .divsinimagen .text-container {
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .text-container h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .text-container p {
+        font-size: 14px;
+    }
+
+    .divimagederecha {
+        flex-direction: column-reverse;
+    }
+
+    .divimagederecha .text-container,
+    .divimagenizquierda .text-container {
+        margin-top: 10px;
+    }
+
+    .divimagenizquierda,
+    .divimagederecha,
+    .divsinimagen {
+        margin-bottom: 20px;
+    }
+
+    .divsinimagen .text-container {
+        width: 100%;
+        text-align: left;
+    }
+
+    .divsinimagen img {
+        margin-top: 10px;
+    }
+
+    .divsinimagen img,
+    .divimagenizquierda img,
+    .divimagederecha img {
+        border-radius: 8px;
+    }
+
+    .tituloizq{
+        font-size: 30px;
+        text-align: center;
+    }
 }
+
 
 footer {
     text-align: center;
