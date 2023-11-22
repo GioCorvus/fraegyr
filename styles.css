@@ -375,78 +375,62 @@ ul li {
 
 
 
-.divimagenizquierda,
-.divimagederecha,
-.divsinimagen {
-    display: flex;
-    align-items: center;
+.historia {
     margin-bottom: 20px;
-    align-items: flex-start; /* Add this line to align items at the start */
-
 }
 
-.divsinimagen {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    box-sizing: border-box;
-
+.historia p {
+    text-align: left;
 }
 
-.divsinimagen .text-container {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    text-align: center; /* Alinea el texto al centro */
-}
-
-.image-container{
+.image-container-left {
     max-width: 35%;
+    float: left; /* Float the image container to the left */
     box-sizing: border-box;
     padding: 0 20px;
-    border: 1px solid #ddd; /* Borde gris claro */
+    border: 1px solid #ddd; /* Light gray border */
     border-radius: 8px;
-    padding-top: 10px;
+    margin-right: 20px; /* Add some margin to create space between the image and text */
+    margin-bottom: 10px;
 }
 
-.text-container {
-    width: 100%;
+.image-container-right {
+    max-width: 35%;
+    float: right; /* Float the image container to the left */
     box-sizing: border-box;
     padding: 0 20px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    margin-right: 20px; /* Add some margin to create space between the image and text */
 }
 
-.image-container img {
+.image-container-left img,
+.image-container-right img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-
-
 .image-description {
     font-size: 14px;
     margin-top: 5px;
-    text-align: center;
+    text-align: center; /* This will override the text-align in .historia p */
 }
 
-.text-container h2 {
-    font-family: "Song", Arial, sans-serif;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.text-container p {
-    text-align: left;
-    margin-bottom: 10px;
+.historia .image-description {
+    text-align: center; /* Center the text */
 }
 
 .tituloizq {
     text-align: left;
-    margin: 30px 0 20px 30px; /* margen-top margen-derecho margen-bottom margen-izquierdo */
+    margin: 30px 0 20px 30px; /* Top right bottom left margin */
     font-size: 50px;
     font-family: "Song", Arial, sans-serif;
     border-bottom: 1px solid #6a6868;
     width: 95%;
 }
+
+
 
 
 
@@ -586,90 +570,34 @@ ul li {
         padding: 8px;
     }
 
-    .tituloizq {
-        text-align: center;
-        font-size: 24px;
-        margin-left: 0;
-        width: 99%;
-    }
+    /*HISTORIA*/
 
-    .divimagenizquierda,
-    .divimagederecha,
-    .divsinimagen {
-        flex-direction: column;
-    }
-
-    .image-container,
-    .text-container {
-        max-width: 90%;
-        padding: 0;
-    }
-
-    .divsinimagen .text-container {
-        text-align: center;
-    }
-
-    .image-container img {
-        width: 100%;
-        height: auto;
+    .historia,
+    .image-container-left,
+    .image-container-right {
+        max-width: 100%;
+        float: none;
+        box-sizing: border-box;
+        padding: 0 20px;
+        border: 1px solid #ddd;
         border-radius: 8px;
-    }
-
-    .text-container h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .text-container p {
-        font-size: 14px;
-    }
-
-    .divimagederecha {
-        flex-direction: column-reverse;
-    }
-
-    .divimagederecha .text-container,
-    .divimagenizquierda .text-container {
-        margin-top: 10px;
-    }
-
-    .divimagenizquierda,
-    .divimagederecha,
-    .divsinimagen {
+        margin-right: 0;
         margin-bottom: 20px;
     }
 
-    .divsinimagen .text-container {
-        width: 100%;
-        text-align: left;
+    .historia p,
+    .historia .image-description {
+        text-align: center;
     }
 
-    .divsinimagen img {
-        margin-top: 10px;
+    .tituloizq {
+        text-align: center;
+        margin: 30px 0 20px 0;
     }
 
-    .divsinimagen img,
-    .divimagenizquierda img,
-    .divimagederecha img {
-        border-radius: 8px;
-    }
-
-    .divimagenizquierda,
-    .divimagederecha {
-        flex-direction: column;
-        align-items: center; /* Center items vertically in smaller screens */
-    }
-
-    .divimagenizquierda .text-container,
-    .divimagederecha .text-container {
-        width: 100%;
-        text-align: left;
-        margin-top: 10px; /* Adjust the top margin as needed */
-    }
-
-    .divimagenizquierda img,
-    .divimagederecha img {
-        margin-top: 10px; /* Adjust the top margin for images as needed */
+    .image-container-left,
+    .image-container-right {
+        margin-right: 0;
     }
 
 
