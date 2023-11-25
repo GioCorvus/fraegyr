@@ -321,7 +321,7 @@ ul li {
 .tabla-personaje{
     float: right;
     margin-left: 30px;
-    width: 22%;
+    width: 20%;
 }
 
 .tabla-personaje th{
@@ -389,7 +389,7 @@ ul li {
 }
 
 .image-container-left {
-    max-width: 35%;
+    max-width: 20%;
     float: left; /* Float the image container to the left */
     box-sizing: border-box;
     padding: 0 20px;
@@ -400,7 +400,7 @@ ul li {
 }
 
 .image-container-right {
-    max-width: 35%;
+    max-width: 20%;
     float: right; /* Float the image container to the left */
     box-sizing: border-box;
     padding: 0 20px;
