@@ -23,7 +23,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('img/bg4.png');
+    background-image: url('img/bg5.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -33,7 +33,7 @@ body {
     background-color: #D7CEB2;
     width: 80%;
     height: 100%;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 20);
 }
@@ -357,6 +357,24 @@ ul li {
 .character-intro {
     text-align: left;
 }
+
+.imagenhistoria {
+    width: 90%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    margin: auto;
+    display: block;
+}
+
+.character-intro h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Pieces", Arial, sans-serif;
+    font-size: 80px;
+    margin-bottom: 10px; /* Añade espacio entre el título y la línea */
+    border-bottom: 1px solid rgb(138, 138, 138);
+}
+
 
 .tabla-personaje{
     float: right;
