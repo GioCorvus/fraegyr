@@ -13,6 +13,11 @@
     src: url('font/song.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Fell';
+    src: url('font/fell.ttf') format('truetype');
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -175,6 +180,29 @@ th {
     font-weight: bold;
 }
 
+.reino ul li a {
+    font-family: 'Fell';
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    border: 1px solid #3E2723;
+    border-radius: 5px;
+    color: #3E2723;
+    background-color: #D2B48C;
+    transition: all 0.3s ease;
+}
+
+.reino ul li a:hover {
+    background-color: #3E2723;
+    color: #D2B48C;
+    box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
+    border-radius: 5px; /* Radio del borde */
+    transition: all 0.5s ease; /* Agrega transición suave */
+    
+}
+
 .reino:not(:last-child) {
     border-right: 1px solid #000;
     /* Línea vertical entre elementos */
@@ -233,11 +261,23 @@ ul li {
     gap: 20px; /* Espacio entre elementos de la cuadrícula */
 }
 
+.hermandades-grid a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .hermandad {
     text-align: center;
     border: 1px solid #ddd; /* Borde gris claro */
     padding: 10px; /* Espaciado interno */
     border-radius: 8px; /* Bordes redondeados para estética */
+}
+
+.hermandad:hover{
+    box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
+    border-radius: 5px; /* Radio del borde */
+    transition: all 0.5s ease; /* Agrega transición suave */
 }
 
 .hermandad img {
@@ -504,6 +544,7 @@ ul li {
         /* 20px es el espacio entre elementos (gap) */
     }
 
+
     .reino:not(:last-child) {
         border-right: 0px;
         /* Línea vertical entre elementos */
@@ -545,7 +586,7 @@ ul li {
     }
 
     .smallicon {
-        width: 30%;
+        width: 50%;
         /* Ajustar tamaño de iconos en pantallas pequeñas */
     }
 
