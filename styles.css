@@ -423,13 +423,14 @@ ul li {
     margin-top: 0;
 }
 
+
 .character-intro h2:after {
     content: '';
     display: block;
-    width: 67%;
-    height: 0.5px; /* Grosor de la línea */
-    background-color: #000; /* Color de la línea */
-    margin-top: 5px; /* Espacio entre el título y la línea */
+    width: 70%;
+    height: 0.5px; 
+    background-color: #000; 
+    margin-top: 5px; 
 }
 
 
