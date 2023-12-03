@@ -441,6 +441,8 @@ ul li {
 
 .historia {
     margin-bottom: 20px;
+    clear: both;
+
 }
 
 .historia p {
@@ -456,6 +458,7 @@ ul li {
     border-radius: 8px;
     margin-right: 20px; /* Add some margin to create space between the image and text */
     margin-bottom: 10px;
+
 }
 
 .image-container-right {
@@ -465,13 +468,15 @@ ul li {
     padding: 0 20px;
     border: 1px solid #ddd; /* Light gray border */
     border-radius: 8px;
-    margin-right: 20px; /* Add some margin to create space between the image and text */
+    margin-right: 10px; /* Add some margin to create space between the image and text */
+    margin-left: 10px;
 }
 
 .image-container-left img,
 .image-container-right img {
     width: 100%;
     height: auto;
+
     border-radius: 8px;
 }
 
@@ -492,6 +497,7 @@ ul li {
     font-family: "Song", Arial, sans-serif;
     border-bottom: 1px solid #6a6868;
     width: 95%;
+    display: block;
 }
 
 /*GALERIA PERSONAJES*/
