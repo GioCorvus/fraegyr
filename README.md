@@ -1,6 +1,6 @@
 # Leyendas de Fraegyr
 
-![Leyendas de Fraegyr Logo](img/ico.png)
+![Leyendas de Fraegyr Logo](img/icoRead.png)
 
 ## Overview
 
