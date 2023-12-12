@@ -420,6 +420,18 @@ ul li {
     text-align: center;
 }
 
+.tabla-personaje a {
+    font-weight: bold;
+    color: #564440; /* Set your desired color for the link text */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+.tabla-personaje a:hover {
+    transition: 0.5s;
+    color: #D2B48C; /* Set your desired color for the link text on hover */
+    text-decoration: underline; /* Add underlines on hover */
+}
+
 .character-image img {
     width: 100%;
     height: auto;
