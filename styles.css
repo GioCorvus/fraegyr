@@ -812,3 +812,28 @@ footer img{
     width: 15px;
     height: auto;
 }
+
+/* Scroll bar track */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3E2723; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #D2B48C; 
+  }
+  
+  /* Handle on active or clicked */
+  ::-webkit-scrollbar-thumb:active {
+    background: #3E2723;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #4d4d4c; 
+  }
